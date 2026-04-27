@@ -1,0 +1,1 @@
+{"error":{"message":"Mistral TTS only supports response_format=\"mp3\". Got \"pcm\".","code":400}}
