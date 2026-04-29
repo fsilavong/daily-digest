@@ -1,0 +1,12 @@
+# Mistral News Digest
+
+## Workflows for work that runs the business
+https://mistral.ai/news/workflows
+
+- Mistral says Workflows is now in public preview and positions it as an orchestration layer for enterprise AI, aimed at moving AI-powered processes from proof of concept to production with durability, observability, and fault tolerance. The post says organizations including ASML, ABANCA, CMA-CGM, France Travail, La Banque Postale, and Moeve are already using it.[1](./citations/1.md)
+- The product addresses failure modes the post says are common in production AI systems: notebook-only pipelines that fail silently, long-running processes that cannot survive network timeouts, multi-step operations that need human approval mid-execution, and systems that lack post-deployment verification.[1](./citations/1.md)
+- Workflow authoring is described as Python-based. Once a workflow is identified, developers write it in Python, publish it to Le Chat so other people in the organization can trigger it, and use Studio to track and audit each step.[1](./citations/1.md)
+- The post gives concrete operational examples: cargo release automation pauses for human review with `wait_for_input()`, waits without compute consumption, notifies the reviewer, and resumes at the same point; document compliance checking uses structured timelines and OpenTelemetry traces for auditability; customer support triage makes routing decisions visible and correctable at the workflow level.[1](./citations/1.md)
+- The “Why Workflows” section claims durability, observability, human-in-the-loop approval, native integration with Studio’s agents/connectors, enterprise RBAC, developer-written/business-team-run workflows, and deployment flexibility across cloud, on-prem, or hybrid.[1](./citations/1.md)
+- Under the hood, the post says Workflows is built on Temporal’s durable execution engine and extended for AI workloads with streaming, payload handling, multi-tenancy, and observability. It also says Mistral hosts the control plane while workers and data processing run in the customer environment, and that the SDK handles retry policies, tracing, timeouts, rate limiting, and human-in-the-loop via decorators and single-line configuration.[1](./citations/1.md)
+- The post is strong on product architecture and examples but does not provide benchmark numbers or comparative evaluations against alternative orchestration systems.[1](./citations/1.md)
