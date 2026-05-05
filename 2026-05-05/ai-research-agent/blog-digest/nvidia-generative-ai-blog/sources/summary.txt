@@ -1,0 +1,3 @@
+Latest source page: https://developer.nvidia.com/blog/category/generative-ai/
+Returned unread items: 1
+- Optimize Supply Chain Decision Systems Using NVIDIA cuOpt Agent Skills

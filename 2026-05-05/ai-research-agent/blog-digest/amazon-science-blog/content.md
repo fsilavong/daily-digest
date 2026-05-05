@@ -1,0 +1,14 @@
+# Amazon Science Blog Digest
+
+## Building trust into AI
+https://www.amazon.science/blog/building-trust-into-ai
+
+- Amazon frames responsible AI (RAI) as integral to product design, not an add-on: the company says AI affects warehouse logistics, customer service chatbots, and AWS services, so safety, fairness, and robustness must be built in from day one [1](./citations/1.md).
+- The post describes an RAI pipeline spanning four phases: pretraining, post-training, evaluation, and third-party monitoring / frontier-risk assessment. It says Amazon has built more than 70 internal and external RAI tools, funded or published more than 500 research papers, and delivered tens of thousands of hours of RAI training to employees [1](./citations/1.md).
+- In pretraining, the team augments public data with RAI-specific datasets containing internal/public guidance, best practices, news and incidents, and domain content such as chemical and nuclear engineering and coding security. It also converts policy documents into multiple learning exercises to teach concepts, compliance questions, and policy-violation judgments [1](./citations/1.md).
+- A limitation the post highlights is that filtering harmful content alone is insufficient: if models never encounter certain harmful concepts during pretraining, later guardrails may be less effective because the model will not recognize them as sensitive. The team therefore explores adding educational context to some filtered content before reintroducing it [1](./citations/1.md).
+- The post says the team is working on modality alignment so models can apply RAI principles across text, audio, images, and other modalities by mapping them into a shared semantic space with text [1](./citations/1.md).
+- For measuring pretraining quality, the post mentions two approaches: using perplexity on RAI domains and testing whether sparse prompts elicit generalized refusals or deflections that were not explicitly taught during pretraining [1](./citations/1.md).
+- In RLHF, Amazon uses human rankings and an independent LLM judge to generate rewards for policy-adherent responses. The post says these reward signals can be used separately or together, and that evaluation happens both during training and after saving checkpoints [1](./citations/1.md).
+- The evaluation team builds model-breaking datasets to provoke unsafe or policy-violating outputs, while also checking for excessive refusal on benign requests. It draws data from red teamers, external security partners, public benchmarks, and even social media, and is working to automate more of the evaluation process [1](./citations/1.md).
+- The final section introduces frontier-risk work, including long-horizon deception and automatic red-teaming frameworks, but the retrieved text is truncated before those topics are developed; treat them as only lightly described in the available source text [1](./citations/1.md).
