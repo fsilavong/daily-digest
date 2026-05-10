@@ -1,0 +1,1 @@
+Requested digest bundle for BAIR blog latest items, grounded in fetched item content.
