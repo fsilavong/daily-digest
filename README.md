@@ -1,10 +1,16 @@
 # Daily Digest
 
+Deployed app: <https://unfoldoc.fly.dev/>
+
 `ai-research-agent` writes one daily research bundle under:
 
 ```text
 data/daily-digest/<YYYY-MM-DD>/ai-research-agent/
 ```
+
+The deployed experience uses [`unfoldoc`](https://github.com/fsilavong/unfoldoc):
+its skill helps generate the digest content, and its app renders the daily
+digest view.
 
 ## High-Level Flow
 
