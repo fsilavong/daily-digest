@@ -1,0 +1,17 @@
+# Mistral News Digest
+
+## Workflows for work that runs the business
+
+[Original URL](https://mistral.ai/news/workflows)
+
+- Mistral says **Workflows** is now in **public preview** and positions it as the **orchestration layer for enterprise AI**: the system is meant to bring **durability, observability, and fault tolerance** to AI-powered processes that need to move from proof of concept into production reliably [1](./citations/1.md).
+- The product is described as part of **Studio**. Developers write workflows in **Python**; workflows can be **published to Le Chat** so people in the organization can trigger them; and **Studio tracks every step** so the execution is auditable [1](./citations/1.md).
+- The post argues that enterprise teams already have capable models, but not a reliable way to run them in production. The failure modes it names include **silent notebook-to-production failures**, **long-running processes that do not survive network timeouts**, **multi-step operations that need human approval mid-execution**, and systems that cannot verify whether they are still doing the right thing after deployment [1](./citations/1.md).
+- Mistral gives three concrete deployment examples:
+  - **Cargo release automation**: validate shipping documents, check for anomalies, flag items that need human sign-off, wait for approval, then release cargo. The article highlights a single-line human approval step, `wait_for_input()`, which pauses without compute consumption and resumes exactly where it left off [1](./citations/1.md).
+  - **Document compliance checking**: automate KYC-style reviews by extracting identity documents, checking sanctions and PEP lists, cross-referencing jurisdictional requirements, and producing a structured risk assessment. Mistral says this reduces a manual hours-long process to **minutes** and exposes each step as a structured timeline with **native OpenTelemetry** trace drill-down in Studio [1](./citations/1.md).
+  - **Customer support triage**: analyze incoming tickets, categorize intent and urgency, route to downstream processes, and make each routing decision visible and traceable. If categorization is wrong, the team corrects it at the workflow level rather than retraining the model [1](./citations/1.md).
+- The listed benefits are **durable execution**, **observability**, **human-in-the-loop approvals**, **native integration with Studio**, **enterprise readiness via workspaces and RBAC**, **developer/business-team split**, and **deployment flexibility** across cloud, on-prem, or hybrid environments [1](./citations/1.md).
+- Under the hood, Mistral says Workflows is built on **Temporal's durable execution engine** and extends it for AI-specific workloads with **streaming, payload handling, multi-tenancy, and observability**. The deployment model separates **control plane** and **data plane**: Mistral hosts the orchestration infrastructure, while workers run in the customer’s Kubernetes environment and connect back via secure credentials so data and business logic stay inside the customer perimeter [1](./citations/1.md).
+- The post also says the Mistral SDK manages **retry policies, tracing, timeouts, rate limiting, and human-in-the-loop** via decorators and single-line configuration, so developers mostly write business logic [1](./citations/1.md).
+- Thin announcement note: this is the only latest item returned from the source page, and it is a product announcement rather than a research paper [1](./citations/1.md).

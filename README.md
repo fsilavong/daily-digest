@@ -22,6 +22,10 @@ No more tab overload. No more FOMO. Every morning, `ai-research-agent` crawls th
 
 ![demo](demo.gif)
 
+The deployed experience uses [`unfoldoc`](https://github.com/fsilavong/unfoldoc):
+its skill helps generate the digest content, and its app renders the daily
+digest view.
+
 ## High-Level Flow
 
 ```mermaid

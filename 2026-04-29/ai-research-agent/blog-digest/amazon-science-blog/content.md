@@ -1,0 +1,10 @@
+# Amazon Science Blog Digest
+
+## How catastrophic is your LLM?
+
+- Thesis: the post argues that single-score red-teaming is too limited for conversational safety evaluation, and presents a statistical certification approach for catastrophic risk in multi-turn dialogue [1](./citations/1.md).
+- Method: it models conversations as a graph of prompts and semantic relationships, then evaluates adversarial sampling regimes including independent prompt sampling, graph-path sampling, graph-path with harmful-target constraint, and adaptive sampling with rejection to approximate adversarial steering [1](./citations/1.md).
+- Measurement: it uses a separate ChatGPT-based judge to label responses as catastrophic or non-catastrophic, and applies Clopper-Pearson confidence intervals to derive lower and upper bounds on attack success rates [1](./citations/1.md).
+- Result: the framework, called C3LLM, gives high-confidence probabilistic bounds over large conversation spaces rather than a single benchmark score; the post says catastrophic risks are nontrivial across all frontier models evaluated [1](./citations/1.md).
+- Model-specific claim: the post states Claude-Sonnet-4 and Nova Premier are safer than the others in the evaluation, while Mistral-Large and DeepSeek-R1 show higher risks; it also says DeepSeek-R1 reaches a certified lower bound above 70% in cybercrime scenarios under RNwJ distributions [1](./citations/1.md).
+- Caveats and significance: the post stresses that benchmark-style evaluations are unreliable for the vast space of possible conversations, and that the method depends on the modeled conversational distributions plus an external judge model; it matters because it offers a more principled way to quantify worst-case conversational safety risk and is open sourced [1](./citations/1.md).

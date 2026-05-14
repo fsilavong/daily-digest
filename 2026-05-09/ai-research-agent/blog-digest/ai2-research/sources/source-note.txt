@@ -1,0 +1,3 @@
+Digest source scope: AllenAI research page latest items, with only one retrievable latest item surfaced by the available source tool.
+Target page: https://allenai.org/research
+Retrieved item: https://allenai.org/blog/emo
