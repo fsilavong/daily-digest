@@ -1,12 +1,26 @@
 # Daily Digest
 
-Deployed app: <https://unfoldoc.fly.dev/>
+<div align="center">
 
-`ai-research-agent` writes one daily research bundle under:
+### The AI research world moves fast. This keeps you up.
 
-```text
-data/daily-digest/<YYYY-MM-DD>/ai-research-agent/
-```
+**20+ top labs · arXiv · Hugging Face — summarised into one daily brief, automatically.**
+
+![Sources](https://img.shields.io/badge/sources-20%2B-blue?style=flat-square)
+![Cadence](https://img.shields.io/badge/cadence-daily-green?style=flat-square)
+![Powered by AI](https://img.shields.io/badge/powered%20by-AI-purple?style=flat-square)
+
+**[📖 Read the latest digest →](https://unfoldoc.fly.dev/)**
+
+<br/>
+
+</div>
+
+--- 
+
+No more tab overload. No more FOMO. Every morning, `ai-research-agent` crawls the frontier — papers, blog posts, model releases — and lands a single, skimmable digest. 
+
+![demo](demo.gif)
 
 The deployed experience uses [`unfoldoc`](https://github.com/fsilavong/unfoldoc):
 its skill helps generate the digest content, and its app renders the daily
